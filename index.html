@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Left Vertical Pane</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    
+    body {
+      /*cursor: url('assets/img/cursor.png'), pointer; /* Custom cursor */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #333333;
+      display: flex;
+      padding: 30px;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+
+    .left-pane {
+      width: 400px;
+      background-color: #0c0c0cbd;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-right: 20px;
+      margin-left: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .left-pane img.profile {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      font-size: 14px;
+      text-align: left;
+      line-height: 2;
+      width: 100%;
+      color: white;
+    }
+
+    .info i {
+      margin-right: 8px;
+      color: #ccc;
+    }
+
+    .separator {
+      border: none;
+      border-top: 1px solid white;
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .education-section {
+      margin-top: 10px;
+    }
+
+    .education-section h3 {
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .education-section .edu-item {
+      margin-bottom: 12px;
+    }
+
+    .edu-item .school-name {
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    .edu-item .details {
+      margin-left: 22px;
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    .main-content {
+      background-color: #0c0c0cbd;
+      padding: 20px;
+      flex-grow: 1;
+      border-radius: 10px;
+      margin-right: 450px;
+      box-shadow: 0 0 10px rgba(19, 17, 17, 0.829);
+      overflow-y: auto;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left-pane">
+    <img src="assets/img/cv_image.jpeg" alt="Your Profile Photo" class="profile" />
+
+    <div class="info">
+      <h2 style="margin-top: 0px; margin-bottom: 10px; text-align: center; color: white;">Francois Verster</h2>
+      <p><i class="fas fa-envelope"></i> Francoisverster6@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +27 73 575 5593</p>
+      <p><i class="fas fa-map-marker-alt"></i> Cape Town, South Africa</p>
+      <p><i class="fas fa-graduation-cap"></i> BSc in Information Technology, NWU</p>
+
+      <hr class="separator" />
+
+      <div class="education-section">
+        <h3><i class="fas fa-user-graduate"></i> <span>Education</span></h3>
+
+        <div class="edu-item">
+          <span>•</span><span class="school-name">North West University (2022 - Present)</span>
+          <div class="details">23 Distinctions</div>
+        </div>
+
+        <div class="edu-item">
+          <span>•</span><span class="school-name">Tygerberg High School (2016 - 2020)</span>
+          <div class="details">3 Distinctions</div>
+        </div>
+
+        <div class="edu-item">
+          <span>•</span><span class="school-name">Parow-West Primary School (2009 - 2015)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h1>About Me</h1>
+    <p style="font-size: 12px;">
+      I'm a highly motivated individual with a strong passion for problem-solving, sports, and the financial markets. I'm in the final year of my BSc Information Technology degree at North-West University, where I've enjoyed building digital solutions ranging from event management apps to database-driven rental systems. Backend development suits me perfectly, as I love combining logic, structure, and performance.
+      <br /><br />
+      Outside of coding, I enjoy researching the financial markets and developing personal algorithmic trading scripts that contribute to my own investment portfolio. I grew up playing sports such as rugby, cricket, football, and MMA, and I still follow them closely — especially on weekends.
+      <br /><br />
+      What I enjoy most about the development field is collaborating with others and achieving milestones as a team. My current goal is to complete my studies and secure an internship or graduate opportunity where I can continue growing as a developer.
+    </p>
+  </div>
+
+</body>
+</html>
