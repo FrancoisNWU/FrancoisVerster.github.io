@@ -2,29 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Left Vertical Pane</title>
+  <title>Francois Verster - Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    
     body {
-      /*cursor: url('assets/img/cursor.png'), pointer; /* Custom cursor */
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #333333;
+      background-color: #333;
       display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
       padding: 30px;
       box-sizing: border-box;
-      height: 100vh;
+      gap: 20px;
     }
 
     .left-pane {
-      width: 400px;
+      width: 330px;
       background-color: #0c0c0cbd;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      margin-right: 20px;
-      margin-left: 350px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -32,7 +31,7 @@
     }
 
     .left-pane img.profile {
-      width: 100%;
+      width: 90%;
       border-radius: 10px;
       margin-bottom: 10px;
     }
@@ -49,16 +48,19 @@
       margin-right: 8px;
       color: #ccc;
     }
-
+    
+    .sidebar h3 i {
+     background-color: #d2e00d;
+     color: #0c0c0cbd;
+     padding: 6px;
+     border-radius: 50%; 
+     margin-right: 8px;   
+    }
     .separator {
       border: none;
       border-top: 1px solid white;
       margin: 20px 0;
       width: 100%;
-    }
-
-    .education-section {
-      margin-top: 10px;
     }
 
     .education-section h3 {
@@ -67,8 +69,22 @@
       margin-bottom: 10px;
       font-size: 15px;
     }
+     
+    .Language-Section h3 {
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
 
-    .education-section .edu-item {
+    .Soft_skills-section h3{
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      font-size: 15px;      
+    }
+
+    .edu-item {
       margin-bottom: 12px;
     }
 
@@ -83,16 +99,191 @@
       color: #ccc;
     }
 
+    .Language-item {
+      margin-bottom: 12px;
+    }
+
+    .Language-item .Afrikaans {
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    .Language-item .English {
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    .Language-item .details {
+      margin-left: 22px;
+      font-size: 13px;
+      color: #ccc;
+    }    
+
+    .Skills-item {
+      margin-bottom: 12px;
+    }
+
+    .Skills-item .Problem-solving {
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    .Skills-item .Time_management {
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    .Skills-item .Team_collaboration {
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    .Skills-item .Adaptability {
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    .Skills-item .Willing {
+      display: inline-block;
+      margin-left: 8px;
+    }   
+
+    .Skills-item .details {
+      margin-left: 22px;
+      font-size: 13px;
+      color: #ccc;
+    } 
+
+
     .main-content {
       background-color: #0c0c0cbd;
       padding: 20px;
       flex-grow: 1;
       border-radius: 10px;
-      margin-right: 450px;
       box-shadow: 0 0 10px rgba(19, 17, 17, 0.829);
       overflow-y: auto;
       color: white;
+      max-width: 750px;
+      width: 100%;
     }
+
+    h1, h2 {
+      color: white;
+    }
+
+    .language-section {
+      margin-top: 30px;
+    }
+
+    .language-table {
+      width: 100%;
+      border-collapse: collapse;
+      color: white;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .language-table th,
+    .language-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .language-table th {
+      background-color: #1e1e1e;
+    }
+
+    .info p i {
+     background-color: #d2e00d;
+     color: #0c0c0cbd;
+     padding: 6px;
+     border-radius: 50%; 
+     margin-right: 8px;  
+}
+
+    .heading-badge {
+     background-color: #d2e00d; 
+     color: black;
+     display: inline-block;
+     padding: 4px 10px;
+     border-radius: 8px;
+     font-size: 20px;
+     font-weight: bold;
+    }    
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+      .collapsible-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+     }
+
+    .collapsible-heading:hover {
+    background-color: #2a2a2a;
+    }
+
+   .collapsible-heading .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+   }
+
+   .collapsible-heading .arrow.rotate {
+    transform: rotate(180deg);
+   }
+
+    .collapsible-content {
+    display: none;
+    padding: 10px 15px;
+    font-size: 13px;
+    background-color: #1c1c1c;
+    border-left: 3px solid #444;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #ccc;
+   }
+
+.collapsible-heading.active {
+  animation: none;
+  border: 2px solid #e0ddc0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.collapsible-heading {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 10px;
+  animation: pulseBorder 2s infinite;
+}
+
+@keyframes pulseBorder {
+  0% {
+    border-color: #ffd700; /* gold */
+   /* box-shadow: 0 0 5px #ffd700;*/
+  }
+  50% {
+    border-color: #ff9800; /* orange */
+    /*box-shadow: 0 0 10px #ff9800; */   
+  }
+  100% {
+    border-color: #ffd700;
+    box-shadow: 0 0 5px #ffd700;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -100,8 +291,9 @@
   <div class="left-pane">
     <img src="assets/img/cv_image.jpeg" alt="Your Profile Photo" class="profile" />
 
+    <!-- Basic info Section -->
     <div class="info">
-      <h2 style="margin-top: 0px; margin-bottom: 10px; text-align: center; color: white;">Francois Verster</h2>
+      <h2 style="margin-top: 0px; margin-bottom: 10px; text-align: center;">Francois Verster</h2>
       <p><i class="fas fa-envelope"></i> Francoisverster6@gmail.com</p>
       <p><i class="fas fa-phone"></i> +27 73 575 5593</p>
       <p><i class="fas fa-map-marker-alt"></i> Cape Town, South Africa</p>
@@ -109,35 +301,543 @@
 
       <hr class="separator" />
 
+      <!-- Education Section -->
       <div class="education-section">
-        <h3><i class="fas fa-user-graduate"></i> <span>Education</span></h3>
-
+        <div class="sidebar">
+          <h3><i class="fas fa-user-graduate"></i> <span>Education</span></h3>
+        </div>
         <div class="edu-item">
           <span>•</span><span class="school-name">North West University (2022 - Present)</span>
           <div class="details">23 Distinctions</div>
         </div>
-
         <div class="edu-item">
           <span>•</span><span class="school-name">Tygerberg High School (2016 - 2020)</span>
           <div class="details">3 Distinctions</div>
+          <div class="details">First team Cricket & Rugby</div>
         </div>
-
         <div class="edu-item">
           <span>•</span><span class="school-name">Parow-West Primary School (2009 - 2015)</span>
         </div>
-      </div>
+       </div>
+
+       <hr class="separator" />
+
+       <!-- Language Section -->
+       <div class="Language-Section">
+        <div class="sidebar">
+          <h3><i class="fas fa-language"></i><span>Languages</span></h3>
+        </div>        
+       <div class="Language-item">
+          <span>•</span><span class="Afrikaans">Afrikaans (Home Language)</span>
+        </div>
+        <div class="Language-item">
+          <span>•</span><span class="English"> English (First Additional Language)</span>
+        </div>
+       </div>
+      
+       <hr class="separator" />
+
+       <!-- Soft Skills section-->
+       <div class="Soft_skills-section">
+        <div class="sidebar">
+          <h3><i class="fas fa-tools"></i><span>Soft Skills</span></h3>
+        </div>          
+       <div class="Skills-item">
+          <span>•</span><span class="Problem-solving">Problem-solving</span>
+        </div>
+        <div class="Skills-item">
+          <span>•</span><span class="Time_management">Time management</span>
+        </div>
+        <div class="Skills-item">
+          <span>•</span><span class="Team_collaboration">Team collaboration</span>
+        </div>
+        <div class="Skills-item">
+          <span>•</span><span class="Adaptability">Adaptability</span>
+        </div>
+        <div class="Skills-item">
+          <span>•</span><span class="Willing">Willingness to learn </span>
+        </div>                        
+       </div> 
+       
+       <hr class="separator" />
+
+       <!-- Courses section-->
+       <div class="Soft_skills-section">
+        <div class="sidebar">
+          <h3><i class="fa fa-bank"></i><span>Courses</span></h3>
+        </div>          
+       <div class="Skills-item">
+          <span>•</span><span class="Problem-solving">Machine Learning In Algorithmic Trading</span>
+          <div class="details">Udemy 2025-2025</div>
+        </div>
+        <div class="Skills-item">
+          <span>•</span><span class="Time_management">The Complete Python Courset</span>
+          <div class="details">Udemy 2021-2022</div>
+        </div>                        
+       </div> 
+
+
+
+
+
     </div>
   </div>
 
   <div class="main-content">
     <h1>About Me</h1>
-    <p style="font-size: 12px;">
+    <p style="font-size: 13px;">
       I'm a highly motivated individual with a strong passion for problem-solving, sports, and the financial markets. I'm in the final year of my BSc Information Technology degree at North-West University, where I've enjoyed building digital solutions ranging from event management apps to database-driven rental systems. Backend development suits me perfectly, as I love combining logic, structure, and performance.
       <br /><br />
-      Outside of coding, I enjoy researching the financial markets and developing personal algorithmic trading scripts that contribute to my own investment portfolio. I grew up playing sports such as rugby, cricket, football, and MMA, and I still follow them closely — especially on weekends.
+      Outside of coding, I enjoy researching the financial markets and developing personal algorithmic trading scripts that contribute to my own investment portfolio. I grew up playing sports such as rugby, cricket, and football, and I still follow them closely — especially on weekends.
       <br /><br />
       What I enjoy most about the development field is collaborating with others and achieving milestones as a team. My current goal is to complete my studies and secure an internship or graduate opportunity where I can continue growing as a developer.
     </p>
+
+    <!-- Programming Languages Section -->
+    <div class="language-section">
+      <h2><span class="heading-badge" style="font-weight: bold;">Programming Languages and Experience</span></h2>
+      <table class="language-table">
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Experience Level</th>
+            <th>Used In Projects</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="icon"> Python</td>
+            <td>Advanced</td>
+            <td>Algorithmic trading scripts</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="icon"> C#</td>
+            <td>Intermediate</td>
+            <td>EventConnect, DVD Rental System</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="icon"> SQL</td>
+            <td>Intermediate</td>
+            <td>Backend databases for applications</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="icon"> C++</td>
+            <td>Intermediate</td>
+            <td>University coursework</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="icon"> Java</td>
+            <td>Beginner</td>
+            <td>University coursework</td>
+          </tr>
+          <tr>
+            <td><img src="assets/img/MQL5_logo.png" class="icon" style="background: white; border-radius: 3px;"> MQL5</td>
+            <td>Intermediate</td>
+            <td>Algorithmic trading strategies (MetaTrader 5)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Technologies Section -->
+    <div class="language-section">
+      <h2><span class="heading-badge" style="font-weight: bold;">Technologies & Frameworks Used</span></h2>
+      <table class="language-table">
+        <thead>
+          <tr>
+            <th>Technology / Framework</th>
+            <th>Description / Use Case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" class="icon"> .NET Framework</td>
+            <td>Backend development using C#</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-desktop icon"></i> Windows Forms</td>
+            <td>Desktop GUI apps (EventConnect, DVD Rental)</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" class="icon"> Visual Studio</td>
+            <td>Main IDE for C# and SQL development</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="icon"> Git & GitHub</td>
+            <td>Version control and collaboration</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" class="icon"> SQL Server</td>
+            <td>Database management and querying</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-database icon"></i> Entity Framework</td>
+            <td>ORM for data access in C# apps</td>
+          </tr>
+          <tr>
+            <td><img src="assets/img/ASP_logo.png" class="icon"> ASP.NET</td>
+            <td>Web development framework using C#</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- University Projects Section with dropdown -->
+    <div class="language-section">
+      <h2><span class="heading-badge" style="font-weight: bold;">University Development Projects</span></h2>
+
+        <!-- EventConnect -->
+       <div class="collapsible-heading" onclick="toggleCollapse(this)">
+       <span>EventConnect</span>
+       <i class="fas fa-caret-down arrow"></i>
+       </div>
+       <div class="collapsible-content">
+       <p>
+         Desktop application used to streamline event management processes. This system supports user registration, user bookings, user notifications and basic event management functionalities such as event registration with capacity tracking.
+       </p>
+       <strong><u>Technologies and Languages used:</u></strong>
+       <ul>
+       <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="icon"> Frontend: C#.NET (WinForms)</li>
+       <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" class="icon"> Database: Microsoft SQL Server 2022</li>
+       <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" class="icon"> IDE: Visual Studio 2022</li>
+       </ul>
+       <p>
+       <strong>GitHub:</strong> <a href="https://github.com/FrancoisNWU/EventConnect---CMPG212-Assignment-Project" target="_blank" style="color: #4da6ff;">Link</a>
+       </p>
+     </div>
+
+ <!-- DVD Rental System -->
+ <div class="collapsible-heading" onclick="toggleCollapse(this)">
+  <span>Group10 DVD Rental System (Group Project)</span>
+  <i class="fas fa-caret-down arrow"></i>
+ </div>
+ <div class="collapsible-content">
+  <p>
+    Digital system that manages day-to-day operations of a DVD rental store.
+  </p>
+
+  <strong><u>Core Features:</u></strong>
+  <ul>
+    <li>📀 <strong>DVD Management</strong><br>Add, update, or remove DVDs and genres.</li>
+    <li>👤 <strong>Customer Records</strong><br>Maintain complete customer profiles with history.</li>
+    <li>🕒 <strong>Rental & Return Handling</strong><br>Process rentals, validate return dates, and handle overdue items.</li>
+    <li>💰 <strong>Fine Calculation</strong><br>Auto-calculate fines based on configurable return windows.</li>
+    <li>📊 <strong>Reports & Queries</strong><br>View rental history and current active rentals.</li>
+  </ul>
+
+  <strong><u>Technologies and Languages used:</u></strong>
+  <ul>
+    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="icon"> Frontend / Application Layer: C#.NET (WinForms)</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" class="icon"> Backend / Database: Microsoft SQL Server 2022</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" class="icon"> IDE: Visual Studio 2022</li>
+    <li><i class="fas fa-database icon"></i> Tools: SQL Server Management Studio (SSMS)</li>
+    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="icon"> Version Control: Git & GitHub</li>
+  </ul>
+
+  <p>
+    <strong>GitHub:</strong>
+    <a href="https://github.com/JacquesNWU/CMPG223_Group10_DVD_Rental" target="_blank" style="color: #4da6ff;">
+      Link
+    </a>
+  </p>
+ </div>
+
+  
+  <script>
+  function toggleCollapse(element) {
+    const content = element.nextElementSibling;
+    const icon = element.querySelector('.arrow');
+
+    // Toggle content
+    content.style.display = content.style.display === "block" ? "none" : "block";
+
+    // Toggle arrow direction
+    icon.classList.toggle('rotate');
+    
+    // Highlight section
+    element.classList.toggle('active');
+  }
+ </script>
+
+  <!-- Custom Range-Breakout Expert Advisor MT5 -->
+  <div class="language-section">
+      <h2><span class="heading-badge" style="font-weight: bold;">Personal Project(s)</span></h2>
+
+        
+       <div class="collapsible-heading" onclick="toggleCollapse(this)">
+       <span>Custom Range-Breakout Expert Advisor MT5</span>
+       <i class="fas fa-caret-down arrow"></i>
+       </div>
+       <div class="collapsible-content">
+       <p>
+         An customisable automated trading Expert Advisor (EA) developed for MetaTrader 5 that identifies and trades range breakouts in the financial markets. The EA uses the user's input to take certain positions in the market.
+       <br>
+       <br>
+       <strong><u>Key Features:</u></strong>
+       <ul>
+       <li>📈 <strong>Custom Range Detection</strong><br>The user selects the specific range times.</li>
+       <li>⚡ <strong>Automatic trade execution</strong><br>EA automatically enteres a position when price leaves the indicated range</li>
+       <li>🎯 <strong>Risk Management(in development)</strong><br>Users can select a range of customisible risk management features, such as traling stop-loss and Risk:Reward ratios.</li>
+       <li>⏰ <strong>News Filtering (in development)</strong><br>Prevents the EA from taking trades during big economical news events</li>
+       </ul>
+       <strong><u>Technologies and Languages used:</u></strong>
+       <ul>
+       <li><img src="assets/img/MQL5_logo.png" class="icon" style="background: white; border-radius: 3px;"> Programming Language: MQL5</li>
+       <li><i class="fas fa-chart-line icon"></i> Platform: MetaTrader 5</li>
+       </ul>
+       <p>
+       <strong>Warning:</strong> The EA is still in development and published for educational purposes only!
+       </p>
+         <p>
+         <strong>GitHub:</strong>
+         <a href="https://github.com/FrancoisNWU/Range-Breakout-Expert-Adviser-MT5-" target="_blank" style="color: #4da6ff;">
+          Link
+    </a>
+  </p>
+     </div>
+
+    </div>
+
+
+   <!-- University Marks Section with slideshow -->
+    <div class="language-section">
+      <h2><span class="heading-badge" style="font-weight: bold;">My University Marks (so far)</span></h2>
+      
+      <div class="slideshow-container">
+        <!-- Navigation arrows -->
+        <div class="slideshow-nav">
+          <button class="nav-arrow nav-left" onclick="changeSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          
+          <!-- Marks table -->
+          <div class="marks-table-container">
+            <table class="language-table" id="marksTable">
+              <thead>
+                <tr>
+                  <th>Code</th>
+                  <th>Module Description</th>
+                  <th>Result</th>
+                  <th>Grade</th>
+                </tr>
+              </thead>
+              <tbody id="marksTableBody">
+                <!-- Content will be populated by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+          
+          <button class="nav-arrow nav-right" onclick="changeSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        
+        <!-- Dots indicator -->
+        <div class="dots-container">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .slideshow-container {
+        position: relative;
+        margin: 20px 0;
+      }
+      
+      .slideshow-nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      
+      .marks-table-container {
+        flex: 1;
+      }
+      
+      /* Fixed table layout to prevent size changes */
+      #marksTable {
+        table-layout: fixed;
+        width: 100%;
+      }
+      
+      #marksTable th:nth-child(1),
+      #marksTable td:nth-child(1) {
+        width: 15%;
+      }
+      
+      #marksTable th:nth-child(2),
+      #marksTable td:nth-child(2) {
+        width: 55%;
+      }
+      
+      #marksTable th:nth-child(3),
+      #marksTable td:nth-child(3) {
+        width: 15%;
+        text-align: center;
+      }
+      
+      #marksTable th:nth-child(4),
+      #marksTable td:nth-child(4) {
+        width: 15%;
+        text-align: center;
+      }
+      
+      #marksTable td {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      
+      .nav-arrow {
+        background-color: #1a1a1a;
+        border: 2px solid #d2e00d;
+        color: #d2e00d;
+        padding: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        min-width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .nav-arrow:hover {
+        background-color: #d2e00d;
+        color: #1a1a1a;
+        transform: scale(1.1);
+      }
+      
+      .nav-arrow:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+      }
+      
+      .dots-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 5px;
+        background-color: #666;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .dot:hover {
+        background-color: #999;
+      }
+      
+      .dot.active {
+        background-color: #d2e00d;
+      }
+    </style>
+
+    <script>
+      // University marks data
+      const marksData = [
+        { code: "ACCS 111", description: "Financial Accountancy I", result: "94.0", grade: "Distinction" },
+        { code: "STTN 111", description: "Descriptive Statistics", result: "96.0", grade: "Distinction" },
+        { code: "ACCS 121", description: "Financial Accountancy II", result: "94.0", grade: "Distinction" },
+        { code: "ALDE 122", description: "Academic Literacy Development - English", result: "88.0", grade: "Distinction" }, 
+        { code: "BMAN 111", description: "Intro to Business Management", result: "84.0", grade: "Distinction" },
+        { code: "CMPG 111", description: "Intro to Computing and Programming (Python)", result: "87.0", grade: "Distinction" },
+        { code: "MTHS 113", description: "Basic Mathematical Techniques", result: "85.0", grade: "Distinction" },
+        { code: "CMPG 121", description: "Structured Programming (C++)", result: "95.0", grade: "Distinction" },
+        { code: "CMPG 122", description: "User Interface Programming (C#)", result: "90.0", grade: "Distinction" },
+        { code: "MTHS 225", description: "Discrete Mathematics", result: "69.0", grade: "Pass" },
+        { code: "BMAN 223", description: "Problem Solving for Managers", result: "87.0", grade: "Distinction" },
+        { code: "CMPG 211", description: "Object Oriented Programming (Java)", result: "88.0", grade: "Distinction" },
+        { code: "CMPG 212", description: "Apps & Advanced UI Programming (SQL)", result: "89.0", grade: "Distinction" },
+        { code: "CMPG 213", description: "System Analysis & Design I", result: "86.0", grade: "Distinction" },
+        { code: "CMPG 214", description: "Communication Skills", result: "82.0", grade: "Distinction" },
+        { code: "CMPG 215", description: "Information Security", result: "95.0", grade: "Distinction" },
+        { code: "CMPG 221", description: "Data Structures & Algorithms (Java)", result: "77.0", grade: "Distinction" },
+        { code: "CMPG 223", description: "System Analysis & Design II", result: "82.0", grade: "Distinction" },
+        { code: "CMPG 311", description: "Databases (Oracle & SQL)", result: "90.0", grade: "Distinction" },
+        { code: "CMPG 312", description: "Decision Support Systems I", result: "75.0", grade: "Distinction" },
+        { code: "CMPG 315", description: "Computer Networks", result: "86.0", grade: "Distinction" },
+        { code: "CMPG 321", description: "Advanced Databases", result: "82.0", grade: "Distinction" },
+        { code: "CMPG 322", description: "Decision Support Systems II", result: "82.0", grade: "Distinction" },
+        { code: "CMPG 323", description: "IT Development", result: "92.0", grade: "Distinction" },
+        { code: "-", description: "-", result: "-", grade: "-" },
+        
+      ];
+      
+      let currentSlideIndex = 0;
+      const recordsPerSlide = 5;
+      const totalSlides = Math.ceil(marksData.length / recordsPerSlide);
+      
+      function displaySlide(slideIndex) {
+        const tableBody = document.getElementById('marksTableBody');
+        const startIndex = slideIndex * recordsPerSlide;
+        const endIndex = Math.min(startIndex + recordsPerSlide, marksData.length);
+        
+        // Clear existing content
+        tableBody.innerHTML = '';
+        
+        // Add rows for current slide
+        for (let i = startIndex; i < endIndex; i++) {
+          const row = tableBody.insertRow();
+          row.insertCell(0).textContent = marksData[i].code;
+          row.insertCell(1).textContent = marksData[i].description;
+          row.insertCell(2).textContent = marksData[i].result;
+          row.insertCell(3).textContent = marksData[i].grade;
+        }
+        
+        // Update dots
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === slideIndex);
+        });
+        
+        // Update navigation buttons (remove disabled state since we now loop)
+        const leftArrow = document.querySelector('.nav-left');
+        const rightArrow = document.querySelector('.nav-right');
+        leftArrow.disabled = false;
+        rightArrow.disabled = false;
+      }
+      
+      function changeSlide(direction) {
+        let newIndex = currentSlideIndex + direction;
+        
+        // Loop to beginning if we go past the end
+        if (newIndex >= totalSlides) {
+          newIndex = 0;
+        }
+        // Loop to end if we go before the beginning
+        else if (newIndex < 0) {
+          newIndex = totalSlides - 1;
+        }
+        
+        currentSlideIndex = newIndex;
+        displaySlide(currentSlideIndex);
+      }
+      
+      function currentSlide(slideNumber) {
+        currentSlideIndex = slideNumber - 1;
+        displaySlide(currentSlideIndex);
+      }
+      
+      // Initialize the slideshow
+      document.addEventListener('DOMContentLoaded', function() {
+        displaySlide(0);
+      });
+    </script>
+
+
   </div>
 
 </body>
