@@ -35,9 +35,9 @@ const marksData = [
   { code: "CMPG 311", description: "Databases (Oracle & SQL)", result: "90.0", grade: "Distinction" },
   { code: "CMPG 312", description: "Decision Support Systems I", result: "75.0", grade: "Distinction" },
   { code: "CMPG 315", description: "Computer Networks", result: "86.0", grade: "Distinction" },
-  { code: "CMPG 321", description: "Advanced Databases", result: "82.0", grade: "Distinction" },
-  { code: "CMPG 322", description: "Decision Support Systems II", result: "82.0", grade: "Distinction" },
-  { code: "CMPG 323", description: "IT Development", result: "92.0", grade: "Distinction" },
+  { code: "-", description: "-", result: "-", grade: "-" },
+  { code: "-", description: "-", result: "-", grade: "-" },
+  { code: "-", description: "-", result: "-", grade: "-" },
   { code: "-", description: "-", result: "-", grade: "-" },
 ];
 
